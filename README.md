@@ -2,8 +2,8 @@
 * `Python 3.6`
 * `Tensoflow 1.14`
 
-# dataset preparation
-First, process dataset to generate the graph and node features. The format is follows:
+# Dataset Preparation
+First, process dataset to generate the graph and node features. The format is as follows:
 * `feature.bin`, the feature vectors of the node instances. To save the space, we store them as sparse matrix via scipy.sparse.lil.lil_matrix. Each row represents all the feature of a node.
 * `label.bin`, the one-hot labels of the node instances. Each row represents a one-hot vector of class label.
 * `graph.bin`, a dict in the format {index: [index_of_neighbor_nodes]}, where the neighbor nodes are organized as a list.
